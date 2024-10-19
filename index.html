@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend 3  Contest 1  Oct 24</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Multiple Timers App</h1>
+        <div class="timer-box">
+            <p class="timer-box-label">
+                Set Time:
+            </p>
+            <div class="timer-box-time">
+                <div class="col">
+                    <input type="number" id="hours" placeholder="hh" class="form-control"/>
+                </div>
+                <div class="col">
+                    <span>:</span>
+                </div>
+                <div class="col">
+                    <input type="number" id="minutes" placeholder="mm" class="form-control mm-control"/>
+                </div>
+                <div class="col">
+                    <span>:</span>
+                </div>
+                <div class="col">
+                    <input type="number" id="seconds" placeholder="ss" class="form-control"/>
+                </div>
+            </div>
+            <button class="timer-box-btn" id="startTimerBtn">
+                Set
+            </button>
+        </div>
+        <div class="d-flex">
+            <h2 class="capsule-heading">Current Timers</h2>
+        </div>
+        <div class="timer-content" id="timers">
+            <p class="text-center p">You have no timers currently!</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
